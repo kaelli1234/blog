@@ -1,1 +1,3 @@
-# blog
+# hugo-blog
+
+## hugo static folder

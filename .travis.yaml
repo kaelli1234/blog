@@ -1,0 +1,18 @@
+sudo: false
+language: go
+git:
+    depth: 1
+install: go get -v github.com/gohugoio/hugo
+script: hugo
+deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: 099e9e067eff1a0d1d895968db284b3a70fdc002
+    on:
+        branch: master
+    local_dir: public
+    repo: kaelli1234/kaelli1234.github.io
+    fqdn: www.lilinjian.com
+    target_branch: master
+    email: llj1589@vip.qq.com
+    name: kaelli1234
